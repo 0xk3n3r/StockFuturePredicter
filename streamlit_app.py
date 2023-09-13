@@ -68,7 +68,7 @@ if st.button('Predict'):
                 print(f"Duplicate Data")
 
     # describing data
-    st.subheader(use_input + ' Data : ' + str(end) + ' recent 100 days')
+    st.subheader(use_input + ' Data : ' + str(end) + ' recent 6000 days')
     with app.app_context():
         conn = db.engine.connect().connection
         sql = "SELECT open, high, low, close, volume FROM alpha_vantage WHERE equityId = '" + use_input + "'"
