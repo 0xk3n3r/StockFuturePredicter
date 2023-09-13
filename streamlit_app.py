@@ -30,7 +30,7 @@ end = CurrentDate
 
 st.title('Alpha Vantage Equity Future Predicter')
 
-use_input = st.text_input('Enter the equity of your choice', '')
+use_input = st.text_input('Enter the equity of your choice', 'VGRLX')
 
 
 def get_Vantage():
